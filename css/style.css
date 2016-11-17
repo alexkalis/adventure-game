@@ -10,7 +10,7 @@ body {
 	visibility: hidden;
 	font-size: 18px;
 	color:  ;
-	font-weight: bold;
+	font-weight: bold;	
 	margin-left: 400px;
 }
 
@@ -87,8 +87,8 @@ nav {
 } 
 
 #axe {
-	margin-left: 900px;
-	margin-top: -100px;
+	margin-left: 760px;
+	margin-top: -400px;
 	visibility: hidden;
 }	
 #optie {
