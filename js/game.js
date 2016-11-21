@@ -28,6 +28,8 @@ function Level1() {
 	opt2.innerHTML = 'ga de zee in';
 	
 	opt2.setAttribute("onclick", "javascript:leveldoodzee()");
+	document.getElementById('bijl').src = 'img/axenew.png';
+	document.getElementById("bijl").style.visibility = "hidden";
 	document.getElementById('level_title').innerHTML = 'Level1';
 	document.getElementById('level_image').src = 'img/strand1.jpg';
 	document.getElementById("optie").innerHTML = "je bent wakker geworden op een eiland ergens in de Atlantische Oceaan\nwat ga je doen?<br>kijk wel uit ik zag net een of ander dier en het leek niet zo vriendelijk.";
@@ -64,8 +66,32 @@ function Level2() {
 
 function level3() {
 	console.log("level3()");
-	document.getElementById("optie").innerHTML = "je ziet een Hakbijl naast het hutje liggen.";
 	
+	
+	var axe = document.getElementById('bijl3');
+	axe.innerHTML = ' ';
+	axe.setAttribute("onClick", "javascript:levelbijl()");
+	var opt1 = document.getElementById('option1')
+	opt1.innerHTML ='pak de hakbijl op';
+	opt1.setAttribute("onclick", "javascript:level4()");
+	
+		
+	var opt2 = document.getElementById('option2')
+	opt2.innerHTML = 'ga de hut in';
+	opt2.setAttribute("onClick", "javascript:level13()");
+
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'stop';
+	opt3.setAttribute("onClick", "javascript:Level1()");
+
+	document.getElementById("optie").innerHTML = "je ziet een Hakbijl naast het hutje liggen.";
+	document.getElementById("axe").style.visibility = "visible";
+	document.getElementById('level_title').innerHTML ='level 3';
+	document.getElementById('level_image').src = 'img/hut.png';
+
+}
+function bijl() {
+	console.log("bijl()");
 	var opt1 = document.getElementById('option1')
 	opt1.innerHTML ='pak de hakbijl op';
 	opt1.setAttribute("onclick", "javascript:level4()");
@@ -81,12 +107,8 @@ function level3() {
 	
 	document.getElementById('axe').src = 'img/axenew.png';
 	document.getElementById("axe").style.visibility = "visible";
-	document.getElementById('level_title').innerHTML ='level 3';
+	document.getElementById('level_title').innerHTML ='bijl';
 	document.getElementById('level_image').src = 'img/hut.png';
-	
-	function bijl() {
-    
-        }
 
 }
 
