@@ -4,7 +4,20 @@ body {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 }
-
+#bijl3 {
+	margin-top: 410px;
+	margin-right: 60px;
+	margin-left: 350px;
+	visibility: ;
+	position: fixed;
+	
+}
+#bijl3:hover {background-color: #black;}
+#bijl3:active {
+background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 #level_title {
 	visibility: hidden;
