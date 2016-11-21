@@ -43,7 +43,7 @@ div.container {
 	width: 80%;
 }
 .custom {
-   cursor: url(img/cursor.jpg), auto;
+   cursor: crosshair;
 }
 
 nav {

@@ -7,6 +7,7 @@ document.getElementById('option2').innerHTML = 'options';
 document.getElementById('option3').innerHTML = 'stop';
 document.getElementById('optie').innerHTML = 'In deze balk staat bij bijna elk level nieuwe info.';
 document.getElementById("bijl3").style.visibility = "hidden";
+document.getElementById("bijl3").src ='img/axenew.png';
 var HasKey = false;
 
 
@@ -29,7 +30,7 @@ function Level1() {
 	opt2.innerHTML = 'ga de zee in';
 	opt2.setAttribute("onclick", "javascript:leveldoodzee()");
 	
-	document.getElementById('level_image').src = 'img/strand1.jpg';
+	document.getElementById('level_image').src = 'img/pijl.png';
 	document.getElementById('bijl3').src = 'img/axenew.png';
 	document.getElementById("bijl3").style.visibility = "hidden";
 	document.getElementById('level_title').innerHTML = 'Level1';
@@ -74,7 +75,6 @@ function level3() {
 	//axe.innerHTML = ' ';
 	//axe.setAttribute("onClick", "javascript:levelbijl()");
 	var bijl3 = document.getElementById('bijl3')
-	bijl3.innerHTML ='';
 	bijl3.src ='img/axenew.png';
 	bijl3.setAttribute("onclick", "javascript:level4()");
 
@@ -118,7 +118,7 @@ function level4() {
 	document.getElementById("optie").innerHTML = "je hebt de bijl <br>hak het hout";
 	
 	var opt1 = document.getElementById('option1')
-	opt1.innerHTML ='hak het hout';
+	opt1.src ='img/pijl.png';
 	opt1.setAttribute("onclick", "javascript:level5()");
 	
 	var opt2 = document.getElementById('option2')
