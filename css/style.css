@@ -4,18 +4,24 @@ body {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 }
+#pijl {
+	position: fixed;
+	margin-top: 100px;
+	margin-left: 280px;
+}
 #bijl3 {
 	margin-top: 410px;
 	margin-right: 60px;
 	margin-left: 350px;
 	visibility: ;
 	position: fixed;
+	background-color: #ff884d;
 	
 }
-#bijl3:hover {background-color: #black;}
+#bijl3:hover {background-color: #brown;}
 #bijl3:active {
-background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+background-color: #brown;
+  box-shadow: none;
   transform: translateY(4px);
 }
 
@@ -103,6 +109,7 @@ nav {
 	margin-left: 760px;
 	margin-top: -400px;
 	visibility: hidden;
+	background-color: brown;
 }	
 #optie {
 	

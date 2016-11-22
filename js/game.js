@@ -30,7 +30,7 @@ function Level1() {
 	opt2.innerHTML = 'ga de zee in';
 	opt2.setAttribute("onclick", "javascript:leveldoodzee()");
 	
-	document.getElementById('level_image').src = 'img/pijl.png';
+	document.getElementById('level_image').src = 'img/strand1.jpg';
 	document.getElementById('bijl3').src = 'img/axenew.png';
 	document.getElementById("bijl3").style.visibility = "hidden";
 	document.getElementById('level_title').innerHTML = 'Level1';
@@ -48,10 +48,10 @@ function Level1() {
 	
 function Level2() {
 	console.log("level2()");
-	
+
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'loop het pad rechts van je in';
-	opt1.setAttribute("onclick", "javascript:level3()");
+	opt1.setAttribute("onClick", "javascript:level3()");
 	
 	var opt2 = document.getElementById('option2');
 	opt2.innerHTML = 'loop het pad links van je in.';
@@ -76,7 +76,7 @@ function level3() {
 	//axe.setAttribute("onClick", "javascript:levelbijl()");
 	var bijl3 = document.getElementById('bijl3')
 	bijl3.src ='img/axenew.png';
-	bijl3.setAttribute("onclick", "javascript:level4()");
+	bijl3.setAttribute("onClick", "javascript:level4()");
 
 	var opt2 = document.getElementById('option2')
 	opt2.innerHTML = 'ga de hut in';
@@ -85,6 +85,7 @@ function level3() {
 	var opt3 = document.getElementById('option3');
 	opt3.innerHTML = 'stop';
 	opt3.setAttribute("onClick", "javascript:Level1()");
+	document.getElementById("option1").style.visibility ="hidden";
     document.getElementById("bijl3").style.visibility = "visible";
 	document.getElementById("optie").innerHTML = "je ziet een Hakbijl naast het hutje liggen.";
 	document.getElementById('level_title').innerHTML ='level 3';
@@ -118,17 +119,17 @@ function level4() {
 	document.getElementById("optie").innerHTML = "je hebt de bijl <br>hak het hout";
 	
 	var opt1 = document.getElementById('option1')
-	opt1.src ='img/pijl.png';
-	opt1.setAttribute("onclick", "javascript:level5()");
+	opt1.innerHTML ='hak het hout';
+	opt1.setAttribute("onClick", "javascript:level5()");
 	
 	var opt2 = document.getElementById('option2')
-	opt2.innerHTML =' ';
-	opt2.setAttribute("onClick", "javascript:level111()");
+	opt2.innerHTML ='ga naar links ';
+	opt2.setAttribute("onClick", "javascript:level10()");
 	
 	var opt3 = document.getElementById('option3')
 	opt3.innerHTML ='stop';
 	opt3.setAttribute("onClick", "javascript:Level1()");
-	
+	document.getElementById("option1").style.visibility ="visible";
 	document.getElementById("bijl3").style.visibility = "hidden";
 	document.getElementById('level_title').innerHTML ='level 4';
 	document.getElementById('level_image').src = 'img/padboom.jpg';
@@ -170,7 +171,8 @@ function level6() {
 		var opt3 = document.getElementById('option3')
 	opt3.innerHTML ='stop';
 	opt3.setAttribute("onclick", "javascript:Level1()");
-
+	document.getElementById("option1").style.visibility ="hidden";
+	document.getElementById("option2").style.visibility ="hidden";
 	document.getElementById('level_title').innerHTML ='level 6';
 	document.getElementById('level_image').src = 'img/slang1.jpg';	
 }
@@ -186,7 +188,8 @@ function level7() {
 		var opt3 = document.getElementById('option3')
 	opt3.innerHTML ='stop';
 	opt3.setAttribute("onclick", "javascript:Level1()");
-	;
+	document.getElementById("option1").style.visibility ="visible";
+	document.getElementById("option2").style.visibility ="hidden";
 	document.getElementById('level_title').innerHTML ='level 7';
 	document.getElementById('level_image').src = 'img/pad2.jpg';
 
@@ -205,7 +208,7 @@ function level8() {
 	var opt3 = document.getElementById('option3')
 	opt3.innerHTML = 'stop';
 	opt3.setAttribute("onclick", "javascript:Level1()");
-	
+	document.getElementById("option2").style.visibility ="visible";
 	document.getElementById("optie").innerHTML = "oh oh, je kan niet verder lopen, maar wacht is even wat zie ik daar nou in het water. neem is even een kijkje.";
 	document.getElementById('level_title').innerHTML ='level 8';
 	document.getElementById('level_image').src = 'img/waterval2.jpg';
@@ -273,15 +276,15 @@ function level13() {
 	document.getElementById("optie").innerHTML = "De kikkers zien er aardig uit, maar zijn dodelijk als ze je aanraken.\ner zit er eentje op je hoofd.\n je bent dood"
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = ' ';
-	opt1.setAttribute("onClick", "javascript:level111()");
+	opt1.setAttribute("onclick", "javascript:level111()");
 
 	var opt2 = document.getElementById('option2');
 	opt2.innerHTML = ' ';
-	opt2.setAttribute("onClick", "javascript:level111()");
+	opt2.setAttribute("onclick", "javascript:level111()");
 
 	var opt3 = document.getElementById('option3');
 	opt3.innerHTML = 'stop';
-	opt3.setAttribute("onClick", "javascript:Level1()");
+	opt3.setAttribute("onclick", "javascript:Level1()");
 	document.getElementById("axe").style.visibility = "hidden";
 	document.getElementById('level_title').innerHTML ='level13';
 	document.getElementById('level_image').src ='img/kikker1.jpg';
@@ -647,5 +650,5 @@ function einde() {
 
 	document.getElementById("optie").innerHTML = 'Thats all folks!'
 	document.getElementById("level_title").innerHTML = 'einde';
-	document.getElementById("level_image").src = 'img/einde.gif';
+	document.getElementById("level_image").src = 'img/eind.gif';
 }
